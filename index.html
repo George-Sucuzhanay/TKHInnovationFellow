@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Advice Project</title>
+ <script src="jquery-3.4.1.min.js"></script>
+
+  <!--Bootstrap CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  
+  <!--Stylesheet-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+   <!--Bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <!--Scripts-->
+  <script type="text/javascript" src="script.js"></script>
+
+</head>
+<body>
+
+
+   <!--Navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">George Sucuzhanay</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="pokemon.html">Current Projects</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="store.html">Newsletter</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+<br><br><br>
+<header class="d-flex align-items-center">
+    <div class="headercontainer">
+      <h1 class="herotitle">Future The Knowledge House Fellow!</h1>
+        <h2>Learn more about my interests and passion! </h2>
+
+
+    </div>
+    <div class="img-container">
+      <img src="data:image/jpeg;base64,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"/> 
+    </div>
+</header>
+<br><br>
+  <div class="container-fluid nice-container">
+    <div class="container">
+    <h1>Learn more below!</h1>
+
+    <h3>Hi, I’m George, a front-end developer based in New York. Please take a look around!
+I am passionate about building excellent websites that improves the lives of those around me. I am currently working on programming projects in preparation of a major in Computer Science. I am also teaching myself Python and JavaScript in order to build a web app on financial literacy. My goal is to obtain a position as a Front-End Developer in which I can utilize my technical and mechanical skills, with possibility for advancement.
+
+I am currently engaged in many coding bootcamps and have volunteered my time to organizations in their website and data entry needs.</h3>
+<br>
+<h3>I am interested in becoming a TKH Innovation Fellow because I know that I want to follow a Software Engineering track. I am passionate about tech and am looking forward to making an impact from the web applications I make. I have been learning about web development since sophomore year of high school and am dedicated in my work. Becoming a TKH Innovation Fellow would mean being able to expand my skills.</h3>
+    </div>
+  </div>
+
+   <div class="container-fluid nice-container">
+    <div class="container">
+    <h1>The world of tech is amoung us and is exciting!</h1>
+    </div>
+  </div>
+  <br><br><br>
+    <h2>My Interest/Hobbies</h2>
+
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <img src="https://lh3.googleusercontent.com/06r1Bqf80xAG4vBKwcrhIGfIhPsJMUGSms9pxvuPxStPR3b0YxGSP5kWjcTBKB4sY7CPn_vdYxbfD_MqQy4d0vNJS79aJvOkKjvzZPcC0rjNoOpma6y_WH4vRqEhSaf-HNehE-1c4T0=w2400" id="logo">
+          <h1>Computer Science Education</h1>
+          <p>After mentoring students to code over the summer, I learned a new interest in teach Computer Science as a mentor and currently pursing a NYS teacher cerification in CS.</p>
+        </div>
+        <div class="col-sm">
+          <img src="https://lh3.googleusercontent.com/WsquhFbMcz-fGJSOS6-05_m_VnN7hojmJUV2Id5MyYp1jMr37_Q0yzXdiwxQWedigCWYs5lDIP0xWuUBB7xz7HWkapoUc2gFqEPny5fY6C56mVL-Tv4X7fbY0Z0p4yEsgsd_PoyejHE=w2400" id="logo">
+          <h1>Financial Literacy</h1>
+          <p>The lack of Financial Literacy in underserved communities has inspired me to teach other the impportant and life-changing skills to teens.</p>
+        </div>
+        <div class="col-sm">
+          <img src="https://lh3.googleusercontent.com/xiUEKs5TTPwxrOi_hhgeOwRBc0ZX8m7j5ps8BIn4um3euC7vZ6L8Ss25fELm-LhlxlOdVP88DK1UU_CGchPjlRiwIrsCF4wwhMjwp5QuBdBPG5qlH81Mk-5g2iB9qyoifXy-JaDPDh8=w2400" id="logo">
+          <h1>Web App Development</h1>
+          <p>Enjoy creating web applications and contributing in solve real-world problems is a passion I have to heart. I enjoy creating websites since I can build it from the ground up and learn even more web development skills.</p>
+        </div>
+      </div>
+   </div>
+
+
+
+
+    <br><br>
+   <!-- Footer -->
+      <footer class = "footer">
+        <div class="container">
+          <div class = "row">
+            <div class="col-sm">
+
+              <h1>Learn More!</h1>
+              <p>georgesucuzhanay100@gmail.com</p>
+            </div>
+          
+            <div class = "col-sm">
+              <h2>Social Media</h2>
+              <div class="row">
+                <div class="col-sm">
+              
+                <a href="https://www.instagram.com/george_sucuzhanay/" target="_blank" rel="noopener noreferrer">
+                <img src="https://girlswhocode.com/assets/images/craft-prod/images/icons/Instagram.svg" alt="Instagram" title="Instagram"></a>
+
+                </div>
+
+                <div class="col-sm">
+              
+                  <a href="https://www.youtube.com/ target="_blank" rel="noopener noreferrer">
+                  <img src="https://girlswhocode.com/assets/images/craft-prod/images/icons/Youtube.svg" alt="Youtube" title="Youtube"></a>
+                  
+                  </div>
+
+
+              
+
+                    <div class="col-sm">
+                    
+                      <a href="https://twitter.com/georgesucuzh0 target="_blank" rel="noopener noreferrer">
+                      <img src="https://girlswhocode.com/assets/images/craft-prod/images/icons/Twitter.svg" alt="Twitter" title="Twitter">
+                      </a>
+                      
+                      </div>
+
+                      <div class="col-sm">
+                      
+                        <a href="https://www.linkedin.com/school/georgesucuzhanay/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://girlswhocode.com/assets/images/craft-prod/images/icons/Linked-In.svg" alt="Linked In" title="Linked In">
+                        </a>
+                        
+                        
+                        </div>
+                        </div>
+
+            </div>
+            <div class = "col-sm"> 
+              <h3>Get our newsletter delivered fresh to your inbox</h3>
+              <form>
+                <div class="form-group">
+                  <label for="formGroupExampleInput2">Sign up for my newsletter to learn more about our upcoming programs, events and volunteer opportunities!</label>
+                  <br>
+                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email Address">
+                </div>
+              </form>
+              <button type="button" class="btn btn-primary">SIGN UP NOW</button>
+            </div>
+          </div>
+         
+    
+              </div>
+      </footer>
+    
+    <script src="script.js"></script>
+
+  </body>
+</html>
